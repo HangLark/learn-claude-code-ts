@@ -18,6 +18,7 @@
     "s05": "tsx s05_todo_write/code.ts",
     "s06": "tsx s06_subagent/code.ts",
     "s07": "tsx s07_skill_loading/code.ts",
+    "s08": "tsx s08_context_compact/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",

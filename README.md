@@ -36,6 +36,7 @@ pnpm check
 - [x] s05 TodoWrite
 - [x] s06 Subagent
 - [x] s07 Skill Loading
-- [ ] s08-s17
+- [x] s08 Context Compact
+- [ ] s09-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。

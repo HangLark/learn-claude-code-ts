@@ -4,5 +4,7 @@ node_modules/
 .env
 dist/
 coverage/
+.transcripts/
+.task_outputs/
 .DS_Store
 *.log
