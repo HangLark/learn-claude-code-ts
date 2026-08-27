@@ -42,6 +42,7 @@ pnpm check
 - [x] s11 Background Tasks
 - [x] s12 Cron Scheduler
 - [x] s13 Agent Teams
-- [ ] s14-s17
+- [x] s14 MCP Tools
+- [ ] s15-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。

@@ -24,6 +24,7 @@
     "s11": "tsx s11_background_tasks/code.ts",
     "s12": "tsx s12_cron_scheduler/code.ts",
     "s13": "tsx s13_agent_teams/code.ts",
+    "s14": "tsx s14_mcp_plugin/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
