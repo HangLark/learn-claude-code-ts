@@ -6,6 +6,7 @@
  */
 
 import { exec } from 'node:child_process';
+import { createInterface } from 'node:readline';
 
 import Anthropic from '@anthropic-ai/sdk';
 import { config as loadEnv } from 'dotenv';
@@ -78,7 +79,6 @@ async function agentLoop(
 }
 
 async function main(): Promise<void> {
-  const { createInterface } = await import('node:readline/promises');
   const readline = createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -86,14 +86,12 @@ async function main(): Promise<void> {
   const history: Anthropic.MessageParam[] = [];
 
   console.log('s01: Agent Loop');
-  console.log('Enter a question, press Enter to send. Type q to quit.\n');
+  console.log('Enter a question, press Enter to send. Press Ctrl+C to quit.\n');
 
-  while (true) {
-    const query = await readline.question('\u001B[36ms01 >> \u001B[0m');
-    if (['q', 'exit', ''].includes(query.trim().toLowerCase())) {
-      break;
-    }
+  readline.setPrompt('\u001B[36ms01 >> \u001B[0m');
+  readline.prompt();
 
+  for await (const query of readline) {
     history.push({ role: 'user', content: query });
     const finalContent = await agentLoop(history);
 
@@ -103,9 +101,8 @@ async function main(): Promise<void> {
       }
     }
     console.log();
+    readline.prompt();
   }
-
-  readline.close();
 }
 
 await main();

@@ -20,7 +20,7 @@ User -> messages[] -> LLM -> tool_use?
 pnpm s01
 ```
 
-输入 `q`、`exit` 或空行退出。
+按 `Ctrl+C` 退出。
 
 > [!WARNING]
 > 这一章没有权限治理，会直接执行模型生成的 shell 命令。请在可丢弃的测试目录中运行；权限控制会在后续章节加入。
