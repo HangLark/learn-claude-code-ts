@@ -17,6 +17,7 @@
     "s04": "tsx s04_hooks/code.ts",
     "s05": "tsx s05_todo_write/code.ts",
     "s06": "tsx s06_subagent/code.ts",
+    "s07": "tsx s07_skill_loading/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
@@ -26,7 +27,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.121.0",
-    "dotenv": "17.4.2"
+    "dotenv": "17.4.2",
+    "yaml": "2.9.0"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
