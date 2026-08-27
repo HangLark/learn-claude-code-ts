@@ -12,22 +12,8 @@ import { config as loadEnv } from 'dotenv';
 
 loadEnv({ override: true, quiet: true });
 
-const baseURL = process.env.ANTHROPIC_BASE_URL;
-if (baseURL) {
-  delete process.env.ANTHROPIC_AUTH_TOKEN;
-}
-
-const client = new Anthropic(baseURL ? { baseURL } : {});
-
-function requireEnvironmentVariable(name: string): string {
-  const value = process.env[name];
-  if (!value) {
-    throw new Error(`${name} is required. Copy .env.example to .env first.`);
-  }
-  return value;
-}
-
-const model = requireEnvironmentVariable('MODEL_ID');
+const client = new Anthropic();
+const { MODEL_ID: model } = process.env as { MODEL_ID: string };
 const systemPrompt = `You are a coding agent at ${process.cwd()}. Use bash to solve tasks. Act, don't explain.`;
 
 // s01 故意只给模型一个 Bash 工具：一个工具已经足以展示完整 agent loop。
