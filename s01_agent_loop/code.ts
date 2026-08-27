@@ -47,6 +47,13 @@ const tools = [
 const exec = promisify(execCallback);
 const dangerousCommands = ['rm -rf /', 'sudo', 'shutdown', 'reboot', '> /dev/'];
 
+function readBashCommand(input: unknown): string | undefined {
+  if (typeof input !== 'object' || input === null || !('command' in input)) {
+    return undefined;
+  }
+  return typeof input.command === 'string' ? input.command : undefined;
+}
+
 async function runBash(command: string): Promise<string> {
   if (dangerousCommands.some((dangerous) => command.includes(dangerous))) {
     return 'Error: Dangerous command blocked';
@@ -99,11 +106,13 @@ async function agentLoop(
 
     const results: Anthropic.ToolResultBlockParam[] = [];
     for (const toolCall of toolCalls) {
-      const { command } = toolCall.input as { command: string };
-      console.log(`\u001B[33m$ ${command}\u001B[0m`);
-
-      const output = await runBash(command);
-      console.log(output.slice(0, 200));
+      const command = readBashCommand(toolCall.input);
+      let output = 'Error: Invalid bash input';
+      if (command !== undefined) {
+        console.log(`\u001B[33m$ ${command}\u001B[0m`);
+        output = await runBash(command);
+        console.log(output.slice(0, 200));
+      }
       results.push({
         type: 'tool_result',
         tool_use_id: toolCall.id,
