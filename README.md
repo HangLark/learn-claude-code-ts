@@ -34,6 +34,7 @@ pnpm check
 - [x] s03 Permission
 - [x] s04 Hooks
 - [x] s05 TodoWrite
-- [ ] s06-s17
+- [x] s06 Subagent
+- [ ] s07-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。

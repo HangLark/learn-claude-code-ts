@@ -16,6 +16,7 @@
     "s03": "tsx s03_permission/code.ts",
     "s04": "tsx s04_hooks/code.ts",
     "s05": "tsx s05_todo_write/code.ts",
+    "s06": "tsx s06_subagent/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
