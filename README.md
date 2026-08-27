@@ -33,6 +33,7 @@ pnpm check
 - [x] s02 Tool Use
 - [x] s03 Permission
 - [x] s04 Hooks
-- [ ] s05-s17
+- [x] s05 TodoWrite
+- [ ] s06-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。
