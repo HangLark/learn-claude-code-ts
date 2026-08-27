@@ -26,6 +26,7 @@
     "s13": "tsx s13_agent_teams/code.ts",
     "s14": "tsx s14_mcp_plugin/code.ts",
     "s15": "tsx s15_integrated_harness/code.ts",
+    "s16": "tsx s16_workflow_runtime/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",

@@ -11,5 +11,6 @@ coverage/
 .mailboxes/
 .worktrees/
 .scheduled_tasks.json
+.runtime/
 .DS_Store
 *.log
