@@ -14,6 +14,7 @@
     "s01": "tsx s01_agent_loop/code.ts",
     "s02": "tsx s02_tool_use/code.ts",
     "s03": "tsx s03_permission/code.ts",
+    "s04": "tsx s04_hooks/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",

@@ -32,6 +32,7 @@ pnpm check
 - [x] s01 Agent Loop
 - [x] s02 Tool Use
 - [x] s03 Permission
-- [ ] s04-s17
+- [x] s04 Hooks
+- [ ] s05-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。
