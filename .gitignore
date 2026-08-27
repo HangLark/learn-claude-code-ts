@@ -8,6 +8,8 @@ coverage/
 .task_outputs/
 .memory/
 .tasks/
+.mailboxes/
+.worktrees/
 .scheduled_tasks.json
 .DS_Store
 *.log
