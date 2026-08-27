@@ -20,6 +20,7 @@
     "s07": "tsx s07_skill_loading/code.ts",
     "s08": "tsx s08_context_compact/code.ts",
     "s09": "tsx s09_memory/code.ts",
+    "s10": "tsx s10_task_system/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",

@@ -7,5 +7,6 @@ coverage/
 .transcripts/
 .task_outputs/
 .memory/
+.tasks/
 .DS_Store
 *.log
