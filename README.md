@@ -45,6 +45,6 @@ pnpm check
 - [x] s14 MCP Tools
 - [x] s15 Integrated Harness
 - [x] s16 Workflow Runtime
-- [ ] s17 Goal Loop
+- [x] s17 Goal Loop
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。
