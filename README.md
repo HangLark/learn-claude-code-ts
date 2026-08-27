@@ -37,6 +37,7 @@ pnpm check
 - [x] s06 Subagent
 - [x] s07 Skill Loading
 - [x] s08 Context Compact
-- [ ] s09-s17
+- [x] s09 Memory
+- [ ] s10-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。
