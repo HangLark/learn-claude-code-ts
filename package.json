@@ -22,6 +22,7 @@
     "s09": "tsx s09_memory/code.ts",
     "s10": "tsx s10_task_system/code.ts",
     "s11": "tsx s11_background_tasks/code.ts",
+    "s12": "tsx s12_cron_scheduler/code.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",

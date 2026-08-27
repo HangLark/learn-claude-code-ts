@@ -8,5 +8,6 @@ coverage/
 .task_outputs/
 .memory/
 .tasks/
+.scheduled_tasks.json
 .DS_Store
 *.log

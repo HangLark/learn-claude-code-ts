@@ -40,6 +40,7 @@ pnpm check
 - [x] s09 Memory
 - [x] s10 Task System
 - [x] s11 Background Tasks
-- [ ] s12-s17
+- [x] s12 Cron Scheduler
+- [ ] s13-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。
