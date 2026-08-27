@@ -1,0 +1,40 @@
+{
+  "name": "learn-claude-code-ts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A minimal TypeScript port of shareAI-lab/learn-claude-code",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=11.0.0"
+  },
+  "scripts": {
+    "s01": "tsx s01_agent_loop/code.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm run format:check && pnpm run lint && pnpm run typecheck"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.121.0",
+    "dotenv": "17.4.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.13.3",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "eslint": "10.9.1",
+    "globals": "17.11.0",
+    "prettier": "3.9.6",
+    "tsx": "4.23.12",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "typescript-eslint": "8.68.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
