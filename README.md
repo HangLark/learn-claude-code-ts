@@ -30,6 +30,7 @@ pnpm check
 ## 进度
 
 - [x] s01 Agent Loop
-- [ ] s02-s17
+- [x] s02 Tool Use
+- [ ] s03-s17
 
 本项目基于上游 MIT 许可进行转写，原作者版权声明保留在 [LICENSE](LICENSE) 中。
